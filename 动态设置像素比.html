@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+//			console.log(window.devicePixelRatio);
+			var pixelRatio = 1 / window.devicePixelRatio;
+//			console.log(pixelRatio);
+			//通过js动态设置视口(viewport)
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+
+
+
+			// 获取html节点
+			var html = document.documentElement;
+			// 获取屏幕宽度
+			var htmlWidth = html.getBoundingClientRect().width;
+			// 屏幕宽度 / 固定数值 = 基准值
+			html.style.fontSize = htmlWidth / 16 + "px";
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
