@@ -10,6 +10,7 @@
 			
 			var html = document.getElementsByTagName('html')[0];
 			var pageWidth = html.getBoundingClientRect().width;
+			pageWidth = pageWidth > 1242 ? 1242 : pageWidth;
 			html.style.fontSize = pageWidth / 16 + 'px';
 		</script>
 	</head>

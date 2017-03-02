@@ -97,8 +97,9 @@ body {
   background-size: 1.25rem 1.4rem;
 }
 .wrap {
-  width: 100%;
+  width:16rem;
   padding-top: 1.85rem;
+  margin: 0 auto;
 }
 .banner {
   width: 100%;

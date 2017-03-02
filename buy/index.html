@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<title>无标题文档</title>
+<style>
+body,ul,h1,input{margin:0;padding:0; font-family:"宋体";}
+li{ list-style:none;}
+input{ outline:none;}
+a{-webkit-tap-highlight-color:rgba(255,0,0,0); text-decoration:none;}
+html{height:100%;}
+body{background:#fdfdfd; overflow:hidden;height:100%;}
+.wrap{width:16rem;margin:0 auto;}
+.header{height:2.2rem; position:absolute; background:#ef3239; text-align:center;box-shadow:0 0 2px rgba(0,0,0,0.5);left:0;top:0;width:100%;z-index:3;}
+.menuBtn{ position:absolute;left:0;top:0;width:2.6rem;height:2.2rem; background:url(img/menuBtn.png) no-repeat center;background-size:0.775rem 0.575rem;}
+.refreshBtn{width:2.4rem;height:2.2rem; background:url(img/refreshBtn.png) no-repeat center; position:absolute;right:0;top:0;background-size:0.675rem 0.75rem;}
+#title{ display:inline-block; vertical-align:top; font:0.85rem/2rem Arial; color:#fff;padding-left:0.825rem; background:url(img/titleIco.png) no-repeat 0 0.7rem; background-size:0.425rem 0.55rem;}
+.nav{height:2.2rem; border-bottom:1px solid #ccc;left:0;top:2.2rem;width:100%; position:absolute;z-index:2;background:#fdfdfd; }
+.nav a{ float:left;width:25%;height:100%; text-align:center; line-height:2.2rem; font-size:0.75rem;color:#848689;}
+.nav .composite{color:#f35252;}
+.nav .composite .ico{width:0.775rem;height:0.45rem;background:url(img/compositeIco.png) no-repeat; display:inline-block; background-size:100% 100%;margin-left:0.25rem;}
+.nav .price .btns{width:0.35rem; vertical-align:top; display:inline-block;height:1rem;padding-top:0.675rem;}
+.nav .price input{border:none;width:0;height:0; float:left;border:0.175rem solid rgba(0,0,0,0);margin:0.075rem 0; background:none;}
+.nav .price input:nth-of-type(1){border-bottom-color:#848689;}
+.nav .price input:nth-of-type(2){border-top-color:#848689;}
+.nav .choce .ico{padding-left:0.25rem;width:0.75rem;height:0.75rem; display:inline-block;background:url(img/choce.gif) no-repeat; background-size:100% 100%; vertical-align:top;margin:0.72rem 0 0 0.225rem;}
+#scroll{ position:relative;height:100%; box-sizing:border-box;overflow:auto;padding-top:4.4rem;z-index:1;}
+.commodityList{padding:.5rem 0;}
+.commodityList li{padding:0.5rem 0; overflow:hidden;border-bottom:1px solid #cccccc;}
+.commodityList .img{float:left;width:4.6rem;height:4.6rem;background:#fff; text-align:center;padding:.2rem;}
+.commodityList .img img{height:100%;}
+.commodityList .describe{float:left;width:9.1rem;margin-left:0.85rem;}
+.commodityList .describe strong{ display:block; font:0.6rem/1rem "宋体";color:#333;}
+.commodityList .describe .price{ display:block; font:bold 0.825rem/1 Arial;padding-top:.6rem; color:#f23838;}
+.commodityList .describe .evaluate{display:block; font:0.6rem/1.4rem "宋体";color:#333;color:#808080;}
+</style>
+</head>
+<body>
+<header class="header">
+	<a href="javascript:;" class="menuBtn"></a>
+    <a href="javascript:;" class="refreshBtn"></a>
+    <h1 id="title">Buy</h1>
+</header>
+<nav class="nav">
+	<a href="javascript:;" class="composite">综合<span class="ico"></span></a>
+    <a href="javascript:;">销量</a>
+    <a href="javascript:;" class="price">价格
+    	<span class="btns">
+        	<input type="button" value="" />
+            <input type="button" value="" />
+        </span>
+    </a>
+    <a href="javascript:;" class="choce">筛选<span class="ico"></span></a>
+</nav>
+<section id="scroll">
+	<ul class="commodityList wrap">
+    	<li>
+        	<a href="#" class="pic">
+            	<span class="img"><img src="img/img.png" /><i></i></span>
+                <span class="describe">
+                	<strong>苹果（Apple）iPhone 6(A1586) 16GB 金色 移动联通电信4G手机</strong>
+                    <span class="price">￥4888.00</span>
+                    <span class="evaluate">好评96% 59091人</span>
+                </span>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="pic">
+            	<span class="img"><img src="img/img.png" /></span>
+                <span class="describe">
+                	<strong>苹果（Apple）iPhone 6(A1586) 16GB 金色 移动联通电信4G手机</strong>
+                    <span class="price">￥4888.00</span>
+                    <span class="evaluate">好评96% 59091人</span>
+                </span>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="pic">
+            	<span class="img"><img src="img/img.png" /></span>
+                <span class="describe">
+                	<strong>苹果（Apple）iPhone 6(A1586) 16GB 金色 移动联通电信4G手机</strong>
+                    <span class="price">￥4888.00</span>
+                    <span class="evaluate">好评96% 59091人</span>
+                </span>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="pic">
+            	<span class="img"><img src="img/img.png" /></span>
+                <span class="describe">
+                	<strong>苹果（Apple）iPhone 6(A1586) 16GB 金色 移动联通电信4G手机</strong>
+                    <span class="price">￥4888.00</span>
+                    <span class="evaluate">好评96% 59091人</span>
+                </span>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="pic">
+            	<span class="img"><img src="img/img.png" /></span>
+                <span class="describe">
+                	<strong>苹果（Apple）iPhone 6(A1586) 16GB 金色 移动联通电信4G手机</strong>
+                    <span class="price">￥4888.00</span>
+                    <span class="evaluate">好评96% 59091人</span>
+                </span>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="pic">
+            	<span class="img"><img src="img/img.png" /></span>
+                <span class="describe">
+                	<strong>苹果（Apple）iPhone 6(A1586) 16GB 金色 移动联通电信4G手机</strong>
+                    <span class="price">￥4888.00</span>
+                    <span class="evaluate">好评96% 59091人</span>
+                </span>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="pic">
+            	<span class="img"><img src="img/img.png" /></span>
+                <span class="describe">
+                	<strong>苹果（Apple）iPhone 6(A1586) 16GB 金色 移动联通电信4G手机</strong>
+                    <span class="price">￥4888.00</span>
+                    <span class="evaluate">好评96% 59091人</span>
+                </span>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="pic">
+            	<span class="img"><img src="img/img.png" /></span>
+                <span class="describe">
+                	<strong>苹果（Apple）iPhone 6(A1586) 16GB 金色 移动联通电信4G手机</strong>
+                    <span class="price">￥4888.00</span>
+                    <span class="evaluate">好评96% 59091人</span>
+                </span>
+            </a>
+        </li>
+    </ul>
+</section>
+<script>
+setSize();
+window.addEventListener("resize", setSize, false);
+window.addEventListener("orientationchange", setSize, false);
+function setSize() {
+	var html = document.getElementsByTagName('html')[0];
+	var width = html.getBoundingClientRect().width;
+	//当宽度大于540的时候最大宽度为540，否则该是多少就多少。
+	width = width > 540 ? 540 : width;
+	html.style.fontSize = width / 16 + "px";
+}
+</script>
+</body>
+</html>
