@@ -139,9 +139,9 @@ body{background:#fdfdfd; overflow:hidden;height:100%;}
 </section>
 <script>
 setSize();
-window.addEventListener("resize", setSize, false);
-window.addEventListener("orientationchange", setSize, false);
-function setSize() {
+window.addEventListener("resize", setRem);
+window.addEventListener("orientationchange", setRem);
+function setRem() {
 	var html = document.getElementsByTagName('html')[0];
 	var width = html.getBoundingClientRect().width;
 	//当宽度大于540的时候最大宽度为540，否则该是多少就多少。
